@@ -41,3 +41,17 @@ $ home-manager switch --flake .
 ```bash
 darwin-version
 ```
+
+# 世代の確認・ロールバック
+
+```bash
+sudo darwin-rebuild --list-generations | tail -n 5
+```
+
+```bash
+# 1つ前
+sudo darwin-rebuild --rollback
+
+# 特定の世代を指定
+sudo darwin-rebuild --switch-generation <generation>
+```
