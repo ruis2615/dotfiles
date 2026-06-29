@@ -5,9 +5,6 @@
   home.homeDirectory = "/Users/ruis2615";  # 変更しない
   home.stateVersion = "26.05";  # 変更しない
 
-  home.packages = [
-  ];
-
   home.packages = with pkgs; [
     git
   ];
@@ -24,7 +21,7 @@
         email = "ruis@ruis.app";
       }
     }
-  }
+  };
 
   home.sessionVariables = {
 
