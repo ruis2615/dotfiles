@@ -33,3 +33,11 @@ $ home-manager switch --flake .
 ```
 
 その後、[リリースノート](https://nix-community.github.io/home-manager/release-notes.xhtml)を確認し、`home.stateVersion`を更新する旨が記載されていた場合は、`home.nix`にて指定された値に更新すること
+
+# nix-darwin関連
+
+# バージョンの確認
+
+```bash
+darwin-version
+```
