@@ -13,6 +13,7 @@ Proceed? ([Y]es/[n]o/[e]xplain): y
 
 ```bash
 nix run home-manager -- switch --flake .
+sudo nix run nix-darwin/master#darwin-rebuild -- switch --flake .
 ```
 
 # home-manager 関連
