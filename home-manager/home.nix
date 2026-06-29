@@ -18,4 +18,11 @@
   };
 
   programs.home-manager.enable = true;
+
+  # Finder上でサイドプレビューを有効化
+  targets.darwin.defaults = {
+    "com.apple.finder" = {
+      ShowPreviewPane = true;
+    };
+  };
 }

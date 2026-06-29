@@ -23,7 +23,7 @@ nix run home-manager -- switch --flake .
 home-manager switch --flake .
 ```
 
-## home-manager自身の更新
+## home-manager自体の更新
 
 `flake.nix` があるディレクトリで実行：
 
@@ -42,6 +42,19 @@ $ home-manager switch --flake .
 darwin-version
 ```
 
+# nix-darwin自体の更新
+
+```bash
+$ nix flake update nix-darwin
+$ sudo darwin-rebuild switch --flake .
+```
+
+# 設定の反映
+
+```bash
+sudo darwin-rebuild switch --flake .
+```
+
 # 世代の確認・ロールバック
 
 ```bash
@@ -54,4 +67,12 @@ sudo darwin-rebuild --rollback
 
 # 特定の世代を指定
 sudo darwin-rebuild --switch-generation <generation>
+```
+
+# パッケージ関連
+
+## パッケージの更新
+
+```bash
+nix flake update nixpkgs
 ```
