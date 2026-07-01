@@ -1,13 +1,14 @@
-{ self, ... }:
+{ device, ... }:
 
 {
-  # Intel系Macの場合は、x86_64-darwin、Apple Siliconの場合は、aarch64-darwinにする
-  nixpkgs.hostPlatform = "aarch64-darwin";
+  # アーキテクチャ・ユーザーはデバイスレジストリ（lib/devices.nix）から取得
+  nixpkgs.hostPlatform = device.system;
+  system.primaryUser = device.username;
+  users.users.${device.username}.home = device.homeDirectory;
+
   # https://nix-darwin.github.io/nix-darwin/manual/index.html#opt-system.stateVersion
   system.stateVersion = 7;
   nix.enable = false;
-
-  system.primaryUser = "ruis2615";
 
   # unfree を全て許可する
   # パッケージ指定で制御しているので、コメントアウト(無条件で許可する場合はこっち)
@@ -18,13 +19,6 @@
   #   pkg:
   #   builtins.elem (pkgs.lib.getName pkg) [
   #   ];
-
-  # ホームディレクトリを指定
-  users.users."ruis2615".home = "/Users/ruis2615";
-
-  imports = [
-    ./home-manager.nix
-  ];
 
   # 利用するシェルをzshに設定
   programs.zsh.enable = true;

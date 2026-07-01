@@ -1,8 +1,8 @@
-{ config, pkgs, ... }:
+{ config, pkgs, device, ... }:
 
 {
-  home.username = "ruis2615";  # 変更しない
-  home.homeDirectory = "/Users/ruis2615";  # 変更しない
+  home.username = device.username;
+  home.homeDirectory = device.homeDirectory;
   home.stateVersion = "26.05";  # 変更しない
 
   home.packages = with pkgs; [
@@ -19,7 +19,7 @@
 
   programs.home-manager.enable = true;
 
-  # Finder上でサイドプレビューを有効化
+  # Finder上でサイドプレビューを有効化(なぜかnix-darwin側で有効化できない)
   targets.darwin.defaults = {
     "com.apple.finder" = {
       ShowPreviewPane = true;
