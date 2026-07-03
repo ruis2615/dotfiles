@@ -18,4 +18,9 @@
     username = "ruis2615";
     homeDirectory = "/Users/ruis2615";
   };
+  mac-env = {
+    system = "aarch64-darwin";
+    username = "ruis2615";
+    homeDirectory = "/Users/ruis2615";
+  };
 }
