@@ -13,7 +13,7 @@
     username = "ruis2615";
     homeDirectory = "/Users/ruis2615";
   };
-  m1-mac-mini = {
+  m1-macbook-pro = {
     system = "aarch64-darwin";
     username = "ruis2615";
     homeDirectory = "/Users/ruis2615";
