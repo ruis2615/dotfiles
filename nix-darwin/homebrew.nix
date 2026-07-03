@@ -25,6 +25,13 @@
       "slack"
       "1password"
       "cursor"
+      "discord"
+      "signal"
+      "unity-hub"
+      "obs"
+      "iina"
+      "zoom"
+      "nani"
     ];
 
     # 全デバイス共通の App Store アプリ（要 mas / Apple ID ログイン）
