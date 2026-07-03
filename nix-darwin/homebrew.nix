@@ -20,6 +20,11 @@
     casks = [
       # 例: "google-chrome"
       "finetune"
+      "claude"
+      "zen"
+      "slack"
+      "1password"
+      "cursor"
     ];
 
     # 全デバイス共通の App Store アプリ（要 mas / Apple ID ログイン）

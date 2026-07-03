@@ -12,7 +12,6 @@ Proceed? ([Y]es/[n]o/[e]xplain): y
 2. このリポジトリをクローン後、当該リポジトリのディレクトリ内で以下のコマンドを実行
 
 ```bash
-nix run home-manager -- switch --flake .
 sudo nix run nix-darwin/master#darwin-rebuild -- switch --flake .
 ```
 
