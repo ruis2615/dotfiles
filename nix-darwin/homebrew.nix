@@ -14,6 +14,9 @@
     # 全デバイス共通の CLI（formulae）
     brews = [
       # 例: "wget"
+      "docker"
+      "docker-compose"
+      "colima"
     ];
 
     # 全デバイス共通の GUI アプリ（casks）
