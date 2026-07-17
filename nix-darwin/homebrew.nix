@@ -37,6 +37,7 @@
       "nani"
       "google-drive"
       "imazing"
+      "visual-studio-code"
     ];
 
     # 全デバイス共通の App Store アプリ（要 mas / Apple ID ログイン）
