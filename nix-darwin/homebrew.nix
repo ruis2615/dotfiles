@@ -17,6 +17,7 @@
       "docker"
       "docker-compose"
       "colima"
+      "dotnet-sdk"
     ];
 
     # 全デバイス共通の GUI アプリ（casks）
@@ -39,6 +40,7 @@
       "imazing"
       "visual-studio-code"
       "raspberry-pi-imager"
+      "leapp"
     ];
 
     # 全デバイス共通の App Store アプリ（要 mas / Apple ID ログイン）
