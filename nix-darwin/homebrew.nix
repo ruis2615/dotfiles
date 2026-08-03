@@ -37,6 +37,7 @@
       "zoom"
       "nani"
       "google-drive"
+      "google-chrome"
       "imazing"
       "visual-studio-code"
       "raspberry-pi-imager"
