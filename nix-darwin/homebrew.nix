@@ -42,6 +42,7 @@
       "visual-studio-code"
       "raspberry-pi-imager"
       "leapp"
+      "ngrok"
     ];
 
     # 全デバイス共通の App Store アプリ（要 mas / Apple ID ログイン）
